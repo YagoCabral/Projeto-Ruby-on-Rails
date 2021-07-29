@@ -1,0 +1,32 @@
+I, [2021-05-15T08:10:59.256976 #21694]  INFO -- : [d1842913-5b11-4e1a-a975-57cbfa15b576] Started GET "/" for 10.0.2.2 at 2021-05-15 08:10:59 +0000
+F, [2021-05-15T08:10:59.263794 #21694] FATAL -- : [d1842913-5b11-4e1a-a975-57cbfa15b576]   
+F, [2021-05-15T08:10:59.264514 #21694] FATAL -- : [d1842913-5b11-4e1a-a975-57cbfa15b576] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2021-05-15T08:10:59.265034 #21694] FATAL -- : [d1842913-5b11-4e1a-a975-57cbfa15b576]   
+F, [2021-05-15T08:10:59.265700 #21694] FATAL -- : [d1842913-5b11-4e1a-a975-57cbfa15b576] actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] railties (5.2.6) lib/rails/engine.rb:524:in `call'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+[d1842913-5b11-4e1a-a975-57cbfa15b576] puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-05-15T08:11:09.303488 #21694]  INFO -- : [a270ab32-9eb4-41e8-b3c7-1d532b9f689e] Started GET "/coins/new" for 10.0.2.2 at 2021-05-15 08:11:09 +0000
+I, [2021-05-15T08:11:09.309497 #21694]  INFO -- : [a270ab32-9eb4-41e8-b3c7-1d532b9f689e] Processing by CoinsController#new as HTML
+I, [2021-05-15T08:11:09.345260 #21694]  INFO -- : [a270ab32-9eb4-41e8-b3c7-1d532b9f689e] Completed 500 Internal Server Error in 35ms (ActiveRecord: 2.9ms)
+F, [2021-05-15T08:11:09.347851 #21694] FATAL -- : [a270ab32-9eb4-41e8-b3c7-1d532b9f689e]   
+F, [2021-05-15T08:11:09.348164 #21694] FATAL -- : [a270ab32-9eb4-41e8-b3c7-1d532b9f689e] ActiveRecord::StatementInvalid (Could not find table 'coins'):
+F, [2021-05-15T08:11:09.348475 #21694] FATAL -- : [a270ab32-9eb4-41e8-b3c7-1d532b9f689e]   
+F, [2021-05-15T08:11:09.348712 #21694] FATAL -- : [a270ab32-9eb4-41e8-b3c7-1d532b9f689e] app/controllers/coins_controller.rb:15:in `new'
